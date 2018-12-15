@@ -1,6 +1,8 @@
 <template>
   <div class="resume" id="resume2">
     <div class="left-column">
+    <div class="pic" id="myselfpic">
+    </div>      
       <div>
         <div class="headline">
           <span> {{ person.name.first }} {{ person.name.middle }} </span>
@@ -51,6 +53,33 @@
             {{ person.contact.github }}
           </span>
         </a>
+        <a v-if="person.contact.telegram"
+          :href="'https://t.me/' + person.contact.telegram"
+          class="external-link">
+
+          <i class="fa fa-telegram contact-icon"></i>
+          <span class="block-marged txt-full-white">
+            {{ person.contact.telegram }}
+          </span>
+        </a>
+        <a v-if="person.contact.twitter"
+          :href="'https://twitter.com/' + person.contact.twitter"
+          class="external-link">
+
+          <i class="fa fa-twitter contact-icon"></i>
+          <span class="block-marged txt-full-white">
+            {{ person.contact.twitter }}
+          </span>
+        </a>
+        <a v-if="person.contact.linkedin"
+          :href="'https://linkedin.com/in/' + person.contact.linkedin"
+          class="external-link">
+
+          <i class="fa fa-linkedin contact-icon"></i>
+          <span class="block-marged txt-full-white">
+            {{ person.contact.linkedin }}
+          </span>
+        </a>
 
         <a v-if="person.contact.codefights"
           :href="'https://codefights.com/profile/' + person.contact.codefights"
@@ -96,24 +125,6 @@
     </div>
 
     <div class="right-column">
-      <div class="experience-section section">
-        <div class="icon">
-          <i class="material-icons small-icon">work</i>
-          <span class="section-headline">{{ lang.experience }}</span>
-        </div>
-
-        <div class="section-content">
-          <a v-for="(experience, index) in person.experience" :key="index"
-            class="section-content__item"
-            :href="experience.website">
-
-            <span class="section-content__header"> {{ experience.position }}</span>
-            <span class="section-content__subheader"> {{ experience.company }}</span>
-            <div class="section-content__text"> {{ experience.timeperiod }}</div>
-            <span class="section-content__text--light"> {{ experience.description }}</span>
-          </a>
-        </div>
-      </div>
 
       <div class="education-section section">
         <div class="icon">
@@ -153,26 +164,6 @@
           </a>
         </div>
       </div>
-
-      <div v-if="person.skills"
-        class="skills-section section">
-        <div class="icon">
-          <i class="material-icons">done_all</i>
-          <span class="section-headline"> {{ lang.skills }} </span>
-        </div>
-
-        <div class="section-content-grid">
-          <a v-for="(skill, index) in person.skills" :key="index"
-            class="grid-item"
-            :href="skill.url">
-
-            <i v-if="skill.iconClass" :class="'lang-icon ' + skill.iconClass"></i>
-
-            <span v-else class="squarred-grid-item"> {{ skill.name }} </span>
-          </a>
-        </div>
-      </div>
-
       <div v-if="person.contributions"
         class="contributions-section section">
 
@@ -194,6 +185,44 @@
           </a>
         </div>
       </div>
+       <div v-if="person.knowledges"
+        class="knowledges-section section">
+
+        <div class="icon">
+          <i class="fa fa-eye font-awesome-icons"></i>
+          <span class="section-headline"> {{lang.knowledges}} </span>
+        </div>
+
+        <div class="section-content-grid">
+          <a v-for="(knowledge, index) in person.knowledges" :key="index"
+            :href="knowledge.url"
+            class="section-content__item-grid">
+
+            <span class="section-content__header"> {{ knowledge.name }} </span>
+            <span class="section-content__text"> {{ knowledge.description1 }} </span>
+            <span class="section-content__text"> {{ knowledge.description2 }} </span>
+            <span class="section-content__text"> {{ knowledge.description3 }} </span>
+          </a>
+        </div>
+      </div>
+      <div v-if="person.skills"
+        class="skills-section section">
+        <div class="icon">
+          <i class="material-icons">done_all</i>
+          <span class="section-headline"> {{ lang.skills }} </span>
+        </div>
+
+        <div class="section-content-grid">
+          <a v-for="(skill, index) in person.skills" :key="index"
+            class="grid-item"
+            :href="skill.url">
+
+            <i v-if="skill.iconClass" :class="'lang-icon ' + skill.iconClass"></i>
+
+            <span v-else class="squarred-grid-item"> {{ skill.name }} </span>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -209,14 +238,29 @@ export default Vue.component(name, getVueOptions(name));
 
 <style lang="less" scoped>
 
-@accent-color: #A800FA;
+@accent-color: #039BE5;
+@th:#FAFAFA;
+@li:@th; 
+#myselfpic {
+  background-image:url('../../resume/id.jpg');
+  color:black;
+}
+ .pic {
+    background-color:@accent-color;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    width:100%;
+    height:250px;
+  }
 
 .resume {
   display: flex;
   position: relative;
 
   font-family:'Roboto' !important;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .left-column {
@@ -227,7 +271,8 @@ export default Vue.component(name, getVueOptions(name));
   text-align: left;
 
   color: #ffffff;
-  color:rgba(255,255,255,0.59);
+  color:@th;
+  // rgba(255,255,255,0.59);
   background-color: @accent-color;
   overflow: hidden;
   display: block;
@@ -429,7 +474,8 @@ a {
 }
 
 .section-content__text--light {
-  color: rgba(0,0,0,0.42);
+  color: @li;
+  //  rgba(0,0,0,0.42);
   font-weight: 300;
 }
 
