@@ -48,9 +48,6 @@
 best-resume-ever requires at least node v.8.5.0.
 
 1. Clone this repository.
-```
-git clone https://github.com/salomonelli/best-resume-ever
-```
 
 2. Run `npm install`.
 
