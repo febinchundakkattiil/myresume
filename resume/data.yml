@@ -19,15 +19,19 @@ education:
 - degree: High School
   timeperiod: May 2012
   description: M.T.H.S.S.C - Kerala Board
-
+experience:
+- position: Full Stack Developer
+  company:  Zartek Technologies
+  timeperiod:  June-19:July-19
 certifications:
 - course: Certified HyperLedger Developer (CHD)
   organization: Kerala Blockchain Academy
+  id: ABCD/KBA/0201001/CHD/19
 - course: Certified Blockchain Associate (CBA)
   organization: Kerala Blockchain Academy
   id: ABCD/KBA/1202010
-- course: Full-Stack Development
-  organization: ICT Academy , Kerala
+# - course: Full-Stack Development
+#   organization: ICT Academy , Kerala
 # skill level goes 0 to 100
 skills:
 - name: Sawtooth
@@ -42,14 +46,14 @@ skills:
   level: 85
 - name: Solidity
   level: 85
+- name: Flutter
+  level: 85
 - name: TypeScript
   level: 90
 - name: Docker
   level: 70
 - name: C++
   level: 95
-- name: React js
-  level: 50
 - name: Go
   level: 50
 - name: Linux 
@@ -73,16 +77,17 @@ projects:
   platform: MEAN Project
   description: Find & Add Labours From City 
   url: https://github.com/denniarems/labour-finder
-- name: Roboshop
-  platform: Python-Flask
-  description: Website that uses Flask framework uses rest-apis
-  url: https://github.com/denniarems/roboshop
+# - name: Roboshop
+#   platform: Python-Flask
+#   description: Website that uses Flask framework uses rest-apis
+#   url: https://github.com/denniarems/roboshop
 contact:
   email: denniarems@gmail.com
   phone: +919446568194
   street: Moothedom-679331
   city: Kerala - India
   github: denniarems
+  gitlab: denniarems
   linkedinId: denniarems
   twitter: denniarems
   telegram: denniarems

@@ -4,7 +4,7 @@
       <div id="pic"></div>
       <div id="data">
         <div>
-          <br>
+          <br />
           <div class="headline">
             <span>{{ person.name.first }} {{ person.name.middle }}</span>
             <span class="uppercase">{{ person.name.last }}</span>
@@ -12,8 +12,8 @@
 
           <p>
             <span class="txt-full-white">{{ person.position }}</span>
-            <br>
-            <br>
+            <br />
+            <br />
             <span class="txt-full-white">{{ person.contact.city }}</span>
           </p>
         </div>
@@ -35,7 +35,7 @@
               {{ person.contact.website }}
             </div>
           </a>
-          <br>
+          <br />
           <a
             v-if="person.contact.github"
             :href="'https://github.com/' + person.contact.github"
@@ -44,7 +44,16 @@
             <i class="fa fa-github contact-icon"></i>
             <span class="block-marged txt-full-white">{{ person.contact.github }}</span>
           </a>
-          <br>
+          <br />
+          <a
+            v-if="person.contact.gitlab"
+            :href="'https://gitlab.com/' + person.contact.gitlab"
+            class="external-link"
+          >
+            <i class="fa fa-gitlab contact-icon"></i>
+            <span class="block-marged txt-full-white">{{ person.contact.gitlab }}</span>
+          </a>
+          <br />
           <a
             v-if="person.contact.linkedinId"
             :href="'https://www.linkedin.com/in/' + person.contact.linkedinId"
@@ -53,7 +62,7 @@
             <i class="fa fa-linkedin contact-icon"></i>
             <span class="block-marged txt-full-white">{{ person.contact.linkedinId }}</span>
           </a>
-          <br>
+          <br />
           <a
             v-if="person.contact.twitter"
             :href="'https://twitter.com/' + person.contact.twitter"
@@ -62,7 +71,7 @@
             <i class="fa fa-twitter contact-icon"></i>
             <span class="block-marged txt-full-white">{{ person.contact.twitter }}</span>
           </a>
-          <br>
+          <br />
 
           <a
             v-if="person.contact.telegram"
@@ -72,12 +81,12 @@
             <i class="fa fa-telegram contact-icon"></i>
             <span class="block-marged txt-full-white">{{ person.contact.telegram }}</span>
           </a>
-          <br>
+          <br />
           <a v-if="person.contact.telegram">
             <i class="fa fa-5x fa-skype contact-icon"></i>
             <span class="block-marged txt-full-white">{{ person.contact.skype }}</span>
           </a>
-          <br>
+          <br />
 
           <a
             v-if="person.contact.codefights"
@@ -87,7 +96,7 @@
             <svg width="20" height="20" viewBox="0 0 24 24" class="contact-icon-svg">
               <path
                 d="M12 15.2L9.2 4.8 0 3.2l1.7 2.6 5.7.7.7 2.3-3.7-.4 1.3 2 3 .3L12 20.8l3.3-10.1 3-.3 1.3-2-3.7.4.7-2.3 5.7-.7L24 3.2l-9.2 1.6"
-              ></path>
+              />
             </svg>
 
             <span class="block-marged txt-full-white">{{ person.contact.codefights }}</span>
@@ -125,7 +134,7 @@
     </div>
 
     <div class="right-column">
-      <!-- <div class="experience-section section">
+      <div class="experience-section section">
         <div class="icon">
           <i class="material-icons small-icon">work</i>
           <span class="section-headline">{{ lang.experience }}</span>
@@ -144,7 +153,7 @@
             <span class="section-content__text--light">{{ experience.description }}</span>
           </a>
         </div>
-      </div>-->
+      </div>
 
       <div class="education-section section">
         <div class="icon">
