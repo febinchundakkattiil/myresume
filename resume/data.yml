@@ -4,7 +4,7 @@ name:
   middle:
   last: Sam
 about: Using my skills, education and experience to develop my career as a Blockchain developer and help the company to achieve business goals by selecting or creating effective IT solutions in an international environment.
-position: Blockchain | Full Stack Developer
+position: Blockchain Developer
 
 birth:
   year: 1995
@@ -24,27 +24,29 @@ experience:
   company:  Zartek Technologies
   timeperiod:  June-19:July-19
 certifications:
+- course: Certified Ethereum Developer (CED)
+  organization: Kerala Blockchain Academy
 - course: Certified HyperLedger Developer (CHD)
   organization: Kerala Blockchain Academy
   id: ABCD/KBA/0201001/CHD/19
 - course: Certified Blockchain Associate (CBA)
   organization: Kerala Blockchain Academy
   id: ABCD/KBA/1202010
-# - course: Full-Stack Development
-#   organization: ICT Academy , Kerala
+- course: Full-Stack Development
+  organization: ICT Academy , Kerala
 # skill level goes 0 to 100
 skills:
 - name: Sawtooth
   level: 95
 - name: JavaScript
   level: 80
-- name: Python
-  level: 70
+- name: Solidity
+  level: 95
 - name: Angular 
   level: 85
 - name: Vue js
   level: 85
-- name: Solidity
+- name: Python
   level: 85
 - name: Flutter
   level: 85
@@ -69,6 +71,10 @@ projects:
 # - name: RAAC
 #   platform: Java
 #   description: Robust and auditable access control with multiple attribute authorities.
+- name: FishingFrenzy
+  platform: Ethereum-Solidity - Angular
+  description: Decentralized Multiplayer Game Based On Smart Contracts Running In Ethereum blockchain
+  url: https://github.com/denniarems/FishingFrenzy
 - name: D.I System
   platform: HyperLedger Sawtooth - Javascript SDK
   description: Decentralized Identity Verification Platform By Police
@@ -77,18 +83,19 @@ projects:
   platform: MEAN Project
   description: Find & Add Labours From City 
   url: https://github.com/denniarems/labour-finder
-# - name: Roboshop
-#   platform: Python-Flask
-#   description: Website that uses Flask framework uses rest-apis
-#   url: https://github.com/denniarems/roboshop
+- name: Roboshop
+  platform: Python-Flask
+  description: Website that uses Flask framework uses rest-apis
+  url: https://github.com/denniarems/roboshop
 contact:
+  website: denniarems.github.io
   email: denniarems@gmail.com
   phone: +919446568194
   street: Moothedom-679331
   city: Kerala - India
   github: denniarems
   gitlab: denniarems
-  linkedinId: denniarems
+  linkedin: denniarems
   twitter: denniarems
   telegram: denniarems
   skype: denniarems
