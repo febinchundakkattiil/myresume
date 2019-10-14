@@ -3,7 +3,7 @@ name:
   first: Dennis
   middle:
   last: Sam
-about: Using my skills, education and experience to develop my career as a Blockchain developer and help the company to achieve business goals by selecting or creating effective IT solutions in an international environment.
+about: Blockchain developer with broad technical skill set, looking to build a career in the IT industry. Thrives in environments that consistently embrace new technologies. Self-motivated, result-oriented, and passionate about contributing to the growth & success of the organization.
 position: Blockchain Developer
 
 birth:
@@ -20,7 +20,7 @@ education:
   timeperiod: May 2012
   description: M.T.H.S.S.C - Kerala Board
 experience:
-- position: Full Stack Developer
+- position: Full Stack Developer(Intern)
   company:  Zartek Technologies
   timeperiod:  June-19:July-19
 certifications:
@@ -36,34 +36,33 @@ certifications:
   organization: ICT Academy , Kerala
 # skill level goes 0 to 100
 skills:
-- name: Sawtooth
+- name: Hyperledger Sawtooth
   level: 95
 - name: JavaScript
   level: 80
 - name: Solidity
   level: 95
-- name: Angular 
+- name: Angular 8
   level: 85
+- name: React js
+  level: 85
+- name: Go
+  level: 50
 - name: Vue js
-  level: 85
-- name: Python
-  level: 85
-- name: Flutter
   level: 85
 - name: TypeScript
   level: 90
-- name: Docker
-  level: 70
+- name: Python
+  level: 85
 - name: C++
   level: 95
-- name: Go
-  level: 50
+- name: Flutter
+  level: 85
+- name: Docker
+  level: 70
 - name: Linux 
   level: 100
-- name: Google Apps Script
-  level: 85
-- name: Etc... 
-  level: 100
+
 knowledge: Well proficient in problem solving and using software tools.
 
 
@@ -73,19 +72,19 @@ projects:
 #   description: Robust and auditable access control with multiple attribute authorities.
 - name: FishingFrenzy
   platform: Ethereum-Solidity - Angular
-  description: Decentralized Multiplayer Game Based On Smart Contracts Running In Ethereum blockchain
+  description: A multiplayer game, built as a decentralized application on the Ethereum blockchain. Players can collect (by fishing), fight (battle) and grow (breeding) crypto-fish tokens.
   url: https://github.com/denniarems/FishingFrenzy
 - name: D.I System
   platform: HyperLedger Sawtooth - Javascript SDK
-  description: Decentralized Identity Verification Platform By Police
+  description: A Decentralized Identity Verification Platform to be used by the Police Department to replace existing ID cards. Only verified users will be provided with the public key, and the user data is securely stored on the blockchain.
   url: https://github.com/denniarems/kycsystem
 - name: LabourFinder
   platform: MEAN Project
-  description: Find & Add Labours From City 
+  description: A portal to match labourers with available jobs in the city.
   url: https://github.com/denniarems/labour-finder
 - name: Roboshop
   platform: Python-Flask
-  description: Website that uses Flask framework uses rest-apis
+  description: A website developed using Flask framework, REST apis.
   url: https://github.com/denniarems/roboshop
 contact:
   website: denniarems.github.io

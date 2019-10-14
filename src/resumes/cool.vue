@@ -16,7 +16,7 @@
           <img class="picture" />
         </div>
         <div class="section">
-          <div class="section-headline">{{ lang.about }}</div>
+          <!-- <div class="section-headline">{{ lang.about }}</div> -->
 
           <div class="section-content section-content--plain" style="color: white;">
             {{ person.about }}
@@ -27,7 +27,7 @@
         </div>
 
         <div v-if="person.skills" class="section">
-          <div class="section-headline">{{ lang.skills }}</div>
+          <!-- <div class="section-headline">{{ lang.skills }}</div> -->
 
           <div class="section-content-grid">
             <a
@@ -42,7 +42,7 @@
         </div>
 
         <div class="section">
-          <div class="section-headline">{{ lang.contact }}</div>
+          <!-- <div class="section-headline">{{ lang.contact }}</div> -->
 
           <div class="section-content section-content--plain">
             <a class="section-link" :href="'mailto:' + person.contact.email">
@@ -408,7 +408,7 @@ a {
 }
 
 .grid-item {
-  padding-right: 5px;
+  padding-right: 3px;
 }
 
 .squarred-grid-item {
